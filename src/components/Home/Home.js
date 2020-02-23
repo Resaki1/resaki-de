@@ -1,9 +1,11 @@
 import React from "react";
+import "./Home.css"
+import tulpen from "../../images/home/flowers.jpg";
 
 class Home extends React.Component {
     render() {
         return (
-            <h1>Home</h1>
+            <img src={tulpen} alt="Tulpen" />
         )
     }
 }

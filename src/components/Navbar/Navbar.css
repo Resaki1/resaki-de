@@ -49,4 +49,5 @@ a:visited {
 .component {
     flex: 1;
     padding: 50px;
+    height: 100vh;
 }
