@@ -3,7 +3,7 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link
+    NavLink
 } from "react-router-dom";
 import Home from "../Home/Home";
 import Astro from "../Astro/Astro";
@@ -12,60 +12,66 @@ import Timelapse from "../Timelapse/Timelapse";
 import Shop from "../Shop/Shop";
 import Gear from "../Gear/Gear";
 import About from "../About/About";
+import "./Navbar.css"
 
 export default function Navbar() {
     return (
         <Router>
-            <div>
-                <nav>
-                    <ul>
-                        <li>
-                            <Link to="/">Home</Link>
-                        </li>
-                        <li>
-                            <Link to="/astro">Astrofotografie</Link>
-                        </li>
-                        <li>
-                            <Link to="/landscape">Landschaftsfotografie</Link>
-                        </li>
-                        <li>
-                            <Link to="/timelapse">Zeitraffer</Link>
-                        </li>
-                        <li>
-                            <Link to="/shop">Shop</Link>
-                        </li>
-                        <li>
-                            <Link to="/gear">Ausrüstung</Link>
-                        </li>
-                        <li>
-                            <Link to="/about">About</Link>
-                        </li>
-                    </ul>
-                </nav>
+            <div className="layout">
+                <div className="navbar">
+                    <h2>Resaki Fotografie</h2>
+                    <nav>
+                        <ul>
+                            <li>
+                                <NavLink exact to="/" activeClassName="selected">Home</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="/astro" activeClassName="selected">Astrofotografie</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="/landscape" activeClassName="selected">Landschaftsfotografie</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="/timelapse" activeClassName="selected">Zeitraffer</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="/shop" activeClassName="selected">Shop</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="/gear" activeClassName="selected">Ausrüstung</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="/about" activeClassName="selected">About</NavLink>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
     
-                <Switch>
-                    <Route path="/about">
-                        <About />
-                    </Route>
-                    <Route path="/gear">
-                        <Gear />
-                    </Route>
-                    <Route path="/shop">
-                        <Shop />
-                    </Route>
-                    <Route path="/timelapse">
-                        <Timelapse />
-                    </Route>
-                    <Route path="/landscape">
-                        <Landscape />
-                    </Route>
-                    <Route path="/astro">
-                        <Astro />
-                    </Route>
-                    <Route path="/">
-                        <Home />
-                    </Route>
-                </Switch>
+                <div className="component">
+                    <Switch>
+                        <Route path="/about">
+                            <About />
+                        </Route>
+                        <Route path="/gear">
+                            <Gear />
+                        </Route>
+                        <Route path="/shop">
+                            <Shop />
+                        </Route>
+                        <Route path="/timelapse">
+                            <Timelapse />
+                        </Route>
+                        <Route path="/landscape">
+                            <Landscape />
+                        </Route>
+                        <Route path="/astro">
+                            <Astro />
+                        </Route>
+                        <Route path="/">
+                            <Home />
+                        </Route>
+                    </Switch>
+                </div>
             </div>
         </Router>
     );
