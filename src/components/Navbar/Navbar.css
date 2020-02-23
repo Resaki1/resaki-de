@@ -47,7 +47,8 @@ a:visited {
 }
 
 .component {
+    box-sizing: border-box;
     flex: 1;
-    padding: 50px;
-    height: 100vh;
+    margin: 50px;
+    height: 90vh;
 }
