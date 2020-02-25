@@ -47,7 +47,7 @@ export default function Navbar() {
                     </nav>
                 </div>
     
-                <div className="component">
+                <div className="content">
                     <Switch>
                         <Route path="/about">
                             <About />

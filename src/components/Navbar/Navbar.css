@@ -20,12 +20,12 @@ h1 {
 }
 
 h2 {
-    margin-top: 50px;
-    margin-left: 50px;
+    margin-top: 5vmin;
+    margin-left: 5vmin;
 }
 
 li {
-    margin: 10px 50px;
+    margin: 1vmin 5vmin;
 }
 
 a {
@@ -46,9 +46,9 @@ a:visited {
     color: #00826C !important;
 }
 
-.component {
-    box-sizing: border-box;
-    flex: 1;
-    margin: 50px;
-    height: 90vh;
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5vmin;
 }
