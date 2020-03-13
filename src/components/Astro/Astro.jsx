@@ -9,10 +9,11 @@ const images = importAll(require.context('../../images/astro', false, /\.(jpe?g)
 
 class Astro extends React.Component {
     render() {
+        console.log(images)
         return (
             <>
-                {images.map((image, index) => (
-                    <Image src={image} key={"astro"+index} />
+                {images.map((link, index) => (
+                    <Image src={link} key={"astro"+index}/>
                 ))}
             </>
         )
