@@ -52,37 +52,66 @@ export default class Navbar extends React.Component {
       <nav>
         <ul>
           <li>
-            <NavLink exact to="/" activeClassName="selected">
+            <NavLink
+              exact
+              to="/"
+              activeClassName="selected"
+              onClick={() => this.onSetSidebarOpen(false)}
+            >
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink to="/astro" activeClassName="selected">
+            <NavLink
+              to="/astro"
+              activeClassName="selected"
+              onClick={() => this.onSetSidebarOpen(false)}
+            >
               Astrofotografie
             </NavLink>
           </li>
           <li>
-            <NavLink to="/landscape" activeClassName="selected">
+            <NavLink
+              to="/landscape"
+              activeClassName="selected"
+              onClick={() => this.onSetSidebarOpen(false)}
+            >
               Landschaftsfotografie
             </NavLink>
           </li>
           <li>
-            <NavLink to="/timelapse" activeClassName="selected">
+            <NavLink
+              to="/timelapse"
+              activeClassName="selected"
+              onClick={() => this.onSetSidebarOpen(false)}
+            >
               Zeitraffer
             </NavLink>
           </li>
           <li>
-            <NavLink to="/shop" activeClassName="selected">
+            <NavLink
+              to="/shop"
+              activeClassName="selected"
+              onClick={() => this.onSetSidebarOpen(false)}
+            >
               Shop
             </NavLink>
           </li>
           <li>
-            <NavLink to="/gear" activeClassName="selected">
+            <NavLink
+              to="/gear"
+              activeClassName="selected"
+              onClick={() => this.onSetSidebarOpen(false)}
+            >
               Ausrüstung
             </NavLink>
           </li>
           <li>
-            <NavLink to="/about" activeClassName="selected">
+            <NavLink
+              to="/about"
+              activeClassName="selected"
+              onClick={() => this.onSetSidebarOpen(false)}
+            >
               About
             </NavLink>
           </li>
