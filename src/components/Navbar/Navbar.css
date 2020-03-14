@@ -10,6 +10,7 @@ button {
   top: 5vmin;
   border: none;
   background: none;
+  padding: 0;
 }
 
 ul {
