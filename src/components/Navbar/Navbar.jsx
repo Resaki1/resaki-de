@@ -14,6 +14,7 @@ import Gear from "../Gear/Gear";
 import About from "../About/About";
 import "./Navbar.css";
 import Sidebar from "react-sidebar";
+import MenuIcon from "@material-ui/icons/Menu";
 
 const mql = window.matchMedia(`(min-width: 800px)`);
 
@@ -102,6 +103,14 @@ export default class Navbar extends React.Component {
           onSetOpen={this.onSetSidebarOpen}
           shadow={false}
         >
+          {!this.state.sidebarDocked ? (
+            <button onClick={() => this.onSetSidebarOpen(true)}>
+              <MenuIcon style={{ color: "white" }} />
+            </button>
+          ) : (
+            undefined
+          )}
+
           <Switch>
             <Route path="/about">
               <About />

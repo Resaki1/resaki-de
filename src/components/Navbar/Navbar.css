@@ -2,6 +2,15 @@
   width: 300px;
 }
 
+button {
+  position: fixed;
+  float: left;
+  left: 5vmin;
+  top: 5vmin;
+  border: none;
+  background: none;
+}
+
 ul {
   list-style: none;
   display: flex;
