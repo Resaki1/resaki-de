@@ -46,7 +46,7 @@ export default class Navbar extends React.Component {
   }
 
   sidebarLinks = (
-    <div className="navbar">
+    <>
       <h2>Resaki Fotografie</h2>
       <nav>
         <ul>
@@ -87,48 +87,45 @@ export default class Navbar extends React.Component {
           </li>
         </ul>
       </nav>
-    </div>
+    </>
   );
 
   render() {
     return (
       <Router>
-        <div className="layout">
-          <Sidebar
-            sidebar={this.sidebarLinks}
-            sidebarClassName="navbar"
-            open={this.state.sidebarOpen}
-            docked={this.state.sidebarDocked}
-            onSetOpen={this.onSetSidebarOpen}
-            shadow={false}
-          >
-            <div className="content">
-              <Switch>
-                <Route path="/about">
-                  <About />
-                </Route>
-                <Route path="/gear">
-                  <Gear />
-                </Route>
-                <Route path="/shop">
-                  <Shop />
-                </Route>
-                <Route path="/timelapse">
-                  <Timelapse />
-                </Route>
-                <Route path="/landscape">
-                  <Landscape />
-                </Route>
-                <Route path="/astro">
-                  <Astro />
-                </Route>
-                <Route path="/">
-                  <Home />
-                </Route>
-              </Switch>
-            </div>
-          </Sidebar>
-        </div>
+        <Sidebar
+          sidebar={this.sidebarLinks}
+          sidebarClassName="navbar"
+          contentClassName="content"
+          open={this.state.sidebarOpen}
+          docked={this.state.sidebarDocked}
+          onSetOpen={this.onSetSidebarOpen}
+          shadow={false}
+        >
+          <Switch>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path="/gear">
+              <Gear />
+            </Route>
+            <Route path="/shop">
+              <Shop />
+            </Route>
+            <Route path="/timelapse">
+              <Timelapse />
+            </Route>
+            <Route path="/landscape">
+              <Landscape />
+            </Route>
+            <Route path="/astro">
+              <Astro />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </Sidebar>
       </Router>
     );
   }
