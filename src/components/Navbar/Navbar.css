@@ -58,13 +58,6 @@ a:visited {
   padding: 5vmin;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  max-height: 90vh;
-  object-fit: cover;
-}
-
-picture + picture {
+.imageWrapper + .imageWrapper {
   margin-top: 5vmin;
 }
