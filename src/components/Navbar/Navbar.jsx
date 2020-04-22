@@ -131,6 +131,7 @@ export default class Navbar extends React.Component {
           docked={this.state.sidebarDocked}
           onSetOpen={this.onSetSidebarOpen}
           shadow={false}
+          styles={{ sidebar: { zIndex: "3" }, overlay: { zIndex: "2" } }}
         >
           {!this.state.sidebarDocked ? (
             <button onClick={() => this.onSetSidebarOpen(true)}>

@@ -12,7 +12,7 @@ class Image extends React.Component {
     return (
       <div
         className="imageWrapper"
-        onClick={() => this.setState({ showDetails: !this.state.showDetails })}
+        onClick={() => console.log("click")}
         onMouseEnter={() => this.setState({ showDetails: true })}
         onMouseLeave={() => this.setState({ showDetails: false })}
       >
