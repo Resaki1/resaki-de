@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "../../Image/Image";
+import Header from "../../Header/Header";
+import "./Astro.css";
 
 function importAll(r) {
   return r.keys().map(r);
@@ -11,12 +13,14 @@ const images = importAll(
 
 class Astro extends React.Component {
   render() {
-    console.log(images);
     return (
       <>
-        {images.map((link, index) => (
-          <Image src={link} key={"astro" + index} />
-        ))}
+        <Header title="Astrofotografie" />
+        <div className="images">
+          {images.map((link, index) => (
+            <Image src={link} key={"astro" + index} />
+          ))}
+        </div>
       </>
     );
   }

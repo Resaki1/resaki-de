@@ -8,6 +8,7 @@ button {
   float: left;
   left: 5vmin;
   top: 5vmin;
+  z-index: 1;
   border: none;
   background: none;
   padding: 0;
