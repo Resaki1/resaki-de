@@ -1,12 +1,12 @@
 import React from "react";
-import Image from "../Image/Image";
+import Image from "../../Image/Image";
 
 function importAll(r) {
   return r.keys().map(r);
 }
 
 const images = importAll(
-  require.context("../../images/astro", false, /\.(jpe?g)$/)
+  require.context("../../../images/astro", false, /\.(jpe?g)$/)
 );
 
 class Astro extends React.Component {

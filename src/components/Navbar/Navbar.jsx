@@ -5,13 +5,13 @@ import {
   Route,
   NavLink
 } from "react-router-dom";
-import Home from "../Home/Home";
-import Astro from "../Astro/Astro";
-import Landscape from "../Landscape/Landscape";
-import Timelapse from "../Timelapse/Timelapse";
-import Shop from "../Shop/Shop";
-import Gear from "../Gear/Gear";
-import About from "../About/About";
+import Home from "../Pages/Home/Home";
+import Astro from "../Pages/Astro/Astro";
+import Landscape from "../Pages/Landscape/Landscape";
+import Timelapse from "../Pages/Timelapse/Timelapse";
+import Shop from "../Pages/Shop/Shop";
+import Gear from "../Pages/Gear/Gear";
+import About from "../Pages/About/About";
 import "./Navbar.css";
 import Sidebar from "react-sidebar";
 import MenuIcon from "@material-ui/icons/Menu";

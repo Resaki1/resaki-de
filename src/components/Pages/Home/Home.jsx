@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import tulpen from "../../images/home/flowers.jpg";
+import tulpen from "../../../images/home/flowers.jpg";
 
 class Home extends React.Component {
   render() {
