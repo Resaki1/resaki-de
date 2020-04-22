@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5vmin;
 }
 
 @media screen and (max-width: 800px) {
