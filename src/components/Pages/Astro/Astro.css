@@ -1,3 +1,7 @@
+.astroWrapper {
+  display: contents;
+}
+
 @media screen and (max-width: 800px) {
   .images {
     margin-top: 10vmin !important;

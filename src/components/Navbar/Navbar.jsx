@@ -67,7 +67,6 @@ export default class Navbar extends React.Component {
       <Sidebar
         sidebar={this.sidebarLinks}
         sidebarClassName="navbar"
-        contentClassName="content"
         open={this.state.sidebarOpen}
         docked={this.state.sidebarDocked}
         onSetOpen={this.onSetSidebarOpen}

@@ -1,5 +1,4 @@
 .wrapper {
-  position: fixed;
   z-index: 1;
   top: 0;
   width: 100%;
@@ -16,8 +15,8 @@ h1 {
   vertical-align: middle;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 800px) {
   .wrapper {
-    display: none !important;
+    position: sticky !important;
   }
 }
