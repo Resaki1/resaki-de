@@ -4,7 +4,11 @@ import tulpen from "../../../images/home/flowers.jpg";
 
 class Home extends React.Component {
   render() {
-    return <img src={tulpen} alt="Tulpen" />;
+    return (
+      <div id="home">
+        <img src={tulpen} alt="Tulpen" />
+      </div>
+    );
   }
 }
 

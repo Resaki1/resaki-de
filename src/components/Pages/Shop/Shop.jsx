@@ -2,7 +2,7 @@ import React from "react";
 
 class Shop extends React.Component {
   render() {
-    return <h1>Shop</h1>;
+    return <h1 id="shop">Shop</h1>;
   }
 }
 

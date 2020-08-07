@@ -16,11 +16,10 @@ class Astro extends React.Component {
     return (
       <>
         <Header title="Astrofotografie" />
-        <div className="images">
-          {images.map((link, index) => (
-            <Image src={link} key={"astro" + index} />
-          ))}
-        </div>
+        <div id="astro" />
+        {images.map((link, index) => (
+          <Image src={link} key={"astro" + index} />
+        ))}
       </>
     );
   }
