@@ -16,9 +16,9 @@ class Image extends React.Component {
         onMouseEnter={() => this.setState({ showDetails: true })}
         onMouseLeave={() => this.setState({ showDetails: false })}
       >
-        <ImageDetails
+        {/* <ImageDetails
           className={this.state.showDetails ? "showDetails" : "hideDetails"}
-        />
+        /> */}
         <picture>
           <img src={this.props.src} alt="" />
         </picture>
