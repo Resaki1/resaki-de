@@ -15,7 +15,7 @@ class Astro extends React.Component {
   render() {
     return (
       <div className="astroWrapper">
-        <Header title="Astrofotografie" />
+        <Header title="Astrofotografie" id="astro" />
         {images.map((link, index) => (
           <Image src={link} key={"astro" + index} />
         ))}
