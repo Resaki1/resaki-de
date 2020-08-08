@@ -4,3 +4,9 @@
   align-items: center;
   margin-top: 5vmin;
 }
+
+@media screen and (min-width: 800px) {
+  .contentWrapper {
+    margin-left: 270px;
+  }
+}
