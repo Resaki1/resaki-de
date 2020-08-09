@@ -5,6 +5,7 @@ import "./ImageDetails.css";
 function ImageDetails(props) {
   return (
     <div className={classNames("imageDetails", props.className)}>
+      <h4 className="imageTitle">Name</h4>
       <div>Details</div>
       <div>Download</div>
       <div>Shop</div>

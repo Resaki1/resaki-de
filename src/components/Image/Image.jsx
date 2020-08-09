@@ -1,5 +1,5 @@
 import React from "react";
-//import ImageDetails from "./ImageDetails/ImageDetails";
+import ImageDetails from "./ImageDetails/ImageDetails";
 import "./Image.css";
 
 class Image extends React.Component {
@@ -16,9 +16,9 @@ class Image extends React.Component {
         onMouseEnter={() => this.setState({ showDetails: true })}
         onMouseLeave={() => this.setState({ showDetails: false })}
       >
-        {/* <ImageDetails
-          className={this.state.showDetails ? "showDetails" : "hideDetails"}
-        /> */}
+        <ImageDetails
+          className={this.state.showDetails ? "visible" : "hidden"}
+        />
         <picture>
           <img src={this.props.src} alt="" />
         </picture>

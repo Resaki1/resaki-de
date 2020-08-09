@@ -5,10 +5,17 @@
   z-index: 0;
   object-fit: scale-down;
   margin: 0 5vmin;
+  width: fit-content;
+  overflow: hidden;
 }
 
 img {
   max-width: 100%;
   height: auto !important;
   max-height: 90vh;
+}
+
+.visible {
+  transition: 0.1s;
+  bottom: 0;
 }
