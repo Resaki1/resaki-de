@@ -1,5 +1,5 @@
 import React from "react";
-import ImageDetails from "./ImageDetails/ImageDetails";
+//import ImageDetails from "./ImageDetails/ImageDetails";
 import "./Image.css";
 
 class Image extends React.Component {
