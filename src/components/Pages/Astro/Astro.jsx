@@ -14,12 +14,12 @@ const images = importAll(
 class Astro extends React.Component {
   render() {
     return (
-      <div className="astroWrapper">
-        <Header title="Astrofotografie" id="astro" />
+      <section className="astroWrapper" id="astro">
+        <Header title="Astrofotografie" />
         {images.map((link, index) => (
           <Image src={link} key={"astro" + index} />
         ))}
-      </div>
+      </section>
     );
   }
 }
