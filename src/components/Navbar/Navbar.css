@@ -7,7 +7,6 @@
 
 button {
   position: fixed;
-  float: left;
   left: 5vmin;
   top: 5vmin;
   z-index: 2;
@@ -16,42 +15,40 @@ button {
   padding: 0;
 }
 
-ul {
+.navigation ul {
   list-style: none;
   display: flex;
   flex-direction: column;
   padding: 0;
 }
 
-h2 {
+.navigation h2 {
   margin-top: 5vmin;
   margin-left: 5vmin;
 }
 
-li {
+.navigation li {
   margin: 1vmin 5vmin;
 }
 
-a {
+.navigation a {
   text-decoration: none;
   color: #646464;
+  transition: all 100ms ease-in-out;
 }
 
-a:hover,
-a:active {
+.navigation a:hover,
+.navigation a:focus {
   color: #00826c !important;
 }
 
-a:visited {
+.navigation a:visited {
   color: #646464;
-}
-
-.selected {
-  color: #00826c !important;
 }
 
 .navigation li.active > a {
   color: #00826c;
+  font-weight: 500;
 }
 
 .imageWrapper + .imageWrapper {
