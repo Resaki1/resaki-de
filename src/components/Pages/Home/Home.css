@@ -1,6 +1,10 @@
 #home {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
 img {
   height: 90vh !important;
 }
