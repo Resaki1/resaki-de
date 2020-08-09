@@ -1,4 +1,5 @@
 import React from "react";
+import "./Landscape.css";
 
 class Landscape extends React.Component {
   render() {
