@@ -10,6 +10,27 @@ import About from "./components/Pages/About/About";
 import "./App.css";
 
 function App() {
+  window.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        const id = entry.target.getAttribute("id");
+        if (entry.isIntersecting) {
+          document
+            .querySelector(`ul li a[href="#${id}"]`)
+            .parentElement.classList.add("active");
+        } else {
+          document
+            .querySelector(`ul li a[href="#${id}"]`)
+            .parentElement.classList.remove("active");
+        }
+      });
+    });
+
+    document.querySelectorAll("section[id]").forEach(section => {
+      observer.observe(section);
+    });
+  });
+
   return (
     <>
       <Navbar />

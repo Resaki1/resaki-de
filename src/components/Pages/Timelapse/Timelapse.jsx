@@ -2,7 +2,11 @@ import React from "react";
 
 class Timelapse extends React.Component {
   render() {
-    return <h1 id="timelapse">Zeitraffer</h1>;
+    return (
+      <section id="timelapse">
+        <h1>Zeitraffer</h1>
+      </section>
+    );
   }
 }
 

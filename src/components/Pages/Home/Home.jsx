@@ -5,9 +5,9 @@ import tulpen from "../../../images/home/flowers.jpg";
 class Home extends React.Component {
   render() {
     return (
-      <div id="home">
+      <section id="home">
         <img src={tulpen} alt="Tulpen" />
-      </div>
+      </section>
     );
   }
 }

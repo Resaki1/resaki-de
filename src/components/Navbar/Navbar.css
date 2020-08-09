@@ -50,6 +50,10 @@ a:visited {
   color: #00826c !important;
 }
 
+.navigation li.active > a {
+  color: #00826c;
+}
+
 .imageWrapper + .imageWrapper {
   margin-top: 5vmin;
 }

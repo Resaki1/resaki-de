@@ -34,7 +34,7 @@ export default class Navbar extends React.Component {
   }
 
   sidebarLinks = (
-    <>
+    <nav className="navigation">
       <h2>Resaki Fotografie</h2>
       <ul>
         <li>
@@ -59,7 +59,7 @@ export default class Navbar extends React.Component {
           <a href="#about">About</a>
         </li>
       </ul>
-    </>
+    </nav>
   );
 
   render() {
