@@ -5,14 +5,12 @@
   height: 15vmin;
   background: white;
   text-align: center;
-  display: inline-block;
 }
 
 h1 {
   color: #00826c;
   line-height: 15vmin;
   display: inline-block;
-  vertical-align: middle;
 }
 
 @media screen and (max-width: 800px) {

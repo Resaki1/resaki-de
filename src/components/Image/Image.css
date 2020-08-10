@@ -1,9 +1,5 @@
 .imageWrapper {
-  display: flex;
-  justify-content: center;
   position: relative;
-  z-index: 0;
-  object-fit: scale-down;
   margin: 0 5vmin;
   width: fit-content;
   overflow: hidden;
