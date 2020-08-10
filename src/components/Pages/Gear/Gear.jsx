@@ -1,10 +1,11 @@
 import React from "react";
+import Header from "../../Header/Header";
 
 class Gear extends React.Component {
   render() {
     return (
       <section id="gear">
-        <h1>Ausrüstung</h1>
+        <Header title="Ausrüstung" />
       </section>
     );
   }

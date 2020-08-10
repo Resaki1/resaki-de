@@ -1,11 +1,12 @@
 import React from "react";
+import Header from "../../Header/Header";
 import "./Landscape.css";
 
 class Landscape extends React.Component {
   render() {
     return (
       <section id="landscape">
-        <h1>Landschaftsfotografie</h1>
+        <Header title="Landschaftsfotografie" />
       </section>
     );
   }
