@@ -74,7 +74,10 @@ export default class Navbar extends React.Component {
         styles={{ sidebar: { zIndex: "3" }, overlay: { zIndex: "2" } }}
       >
         {!this.state.sidebarDocked ? (
-          <button onClick={() => this.onSetSidebarOpen(true)}>
+          <button
+            className="menuButton"
+            onClick={() => this.onSetSidebarOpen(true)}
+          >
             <MenuIcon style={{ color: "#00826c" }} titleAccess="meaning" />
           </button>
         ) : (

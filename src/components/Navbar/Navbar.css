@@ -5,11 +5,11 @@
   position: fixed !important;
 }
 
-button {
+.menuButton {
   position: fixed;
   left: 5vmin;
   top: 5vmin;
-  z-index: 2;
+  z-index: 3;
   border: none;
   background: none;
   padding: 0;
