@@ -9,7 +9,7 @@
   position: fixed;
   left: 5vmin;
   top: 5vmin;
-  z-index: 3;
+  z-index: 4 !important;
   border: none;
   background: none;
   padding: 0;
