@@ -1,6 +1,7 @@
 import React from "react";
 import firebase from "firebase/app";
 import "firebase/storage";
+import Image from "../../Image/Image";
 import Header from "../../Header/Header";
 import "./Landscape.css";
 
@@ -23,7 +24,7 @@ function Landscape() {
       <Header title="Landschaftsfotografie" />
       {imageUrls.map((url, index) => {
         return (
-          <img
+          <Image
             src={url}
             key={`landscape ${index}`}
             alt={`landscape no. ${index}`}
