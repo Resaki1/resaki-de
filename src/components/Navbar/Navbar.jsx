@@ -44,7 +44,7 @@ export default class Navbar extends React.Component {
           <a href="#astro">Astrofotografie</a>
         </li>
         <li>
-          <a href="#landscape">Landschaftsfotografie</a>
+          <a href="#Landscape">Landschaftsfotografie</a>
         </li>
         <li>
           <a href="#timelapse">Zeitraffer</a>
