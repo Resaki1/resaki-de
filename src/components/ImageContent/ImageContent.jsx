@@ -9,7 +9,7 @@ function ImageContent(props) {
   const [imageUrls, setImageUrls] = React.useState([]);
 
   React.useEffect(() => {
-    const storageRef = firebase.storage().ref(props.name);
+    const storageRef = firebase.storage().ref(`Images/${props.name}`);
     storageRef.listAll().then(function(result) {
       result.items.forEach(function(imageRef) {
         imageRef.getDownloadURL().then(function(url) {
