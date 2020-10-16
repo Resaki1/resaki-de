@@ -4,3 +4,16 @@
   flex-direction: column;
   justify-content: center;
 }
+
+.homeImage {
+  object-fit: cover;
+  height: 100% !important;
+  width: auto;
+  margin: 15vmin 5vmin;
+}
+
+@media screen and (max-width: 800px) {
+  .homeImage {
+    margin-top: 5vmin !important;
+  }
+}

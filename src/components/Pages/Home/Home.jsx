@@ -1,12 +1,17 @@
 import React from "react";
+import Header from "../../Header/Header";
 import "./Home.css";
-import tulpen from "../../../images/home/flowers.jpg";
 
 class Home extends React.Component {
   render() {
     return (
       <section id="home">
-        <img src={tulpen} alt="Tulpen" />
+        <Header />
+        <img
+          className="homeImage"
+          src="https://firebasestorage.googleapis.com/v0/b/resaki-de.appspot.com/o/Images%2Finfrared%2FZastler%20Valley.jpg?alt=media&token=5580becf-8937-43b7-873a-108f88c28dd2"
+          alt="Zastler Valley in infrared"
+        />
       </section>
     );
   }
