@@ -8,9 +8,12 @@
 }
 
 h1 {
-  color: #00826c;
+  color: #4f4f4f;
+  margin-top: "1px";
   line-height: 15vmin;
   display: inline-block;
+  font-weight: 500;
+  font-size: 1.75rem !important;
 }
 
 @media screen and (max-width: 800px) {

@@ -35,7 +35,7 @@ export default class Navbar extends React.Component {
 
   sidebarLinks = (
     <nav className="navigation">
-      <h2>Resaki Fotografie</h2>
+      <h2>resaki photography</h2>
       <ul>
         <li>
           <a href="#home">Home</a>
@@ -82,7 +82,7 @@ export default class Navbar extends React.Component {
             className="menuButton"
             onClick={() => this.onSetSidebarOpen(true)}
           >
-            <MenuIcon style={{ color: "#00826c" }} titleAccess="meaning" />
+            <MenuIcon style={{ color: "#4f4f4f" }} titleAccess="meaning" />
           </button>
         ) : (
           undefined
