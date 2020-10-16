@@ -5,6 +5,8 @@
   height: 15vmin;
   background: white;
   text-align: center;
+  visibility: hidden;
+  display: none;
 }
 
 h1 {
@@ -19,5 +21,14 @@ h1 {
 @media screen and (max-width: 800px) {
   .wrapper {
     position: sticky !important;
+    display: block;
+    visibility: visible;
   }
+}
+
+.logo {
+  width: 5vmin;
+  margin-right: 2vmin;
+  position: relative;
+  top: 1px;
 }
