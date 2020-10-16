@@ -4,12 +4,6 @@
   align-items: center;
 }
 
-@media screen and (min-width: 800px) {
-  .contentWrapper {
-    margin-left: 270px;
-  }
-}
-
 h1 {
   font-size: 32px;
   margin: 0;

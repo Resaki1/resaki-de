@@ -32,16 +32,17 @@ function App() {
 
   return (
     <>
-      <Navbar />
-      <div className="contentWrapper">
-        <Home />
-        <ImageContent name="astro" title="Astro" />
-        <ImageContent name="landscape" title="Landschaft" />
-        <Timelapse />
-        <Shop />
-        <Gear />
-        <About />
-      </div>
+      <Navbar>
+        <div className="contentWrapper">
+          <Home />
+          <ImageContent name="astro" title="Astro" />
+          <ImageContent name="landscape" title="Landschaft" />
+          <Timelapse />
+          <Shop />
+          <Gear />
+          <About />
+        </div>
+      </Navbar>
     </>
   );
 }

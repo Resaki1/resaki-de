@@ -87,6 +87,7 @@ export default class Navbar extends React.Component {
         ) : (
           undefined
         )}
+        {this.props.children}
       </Sidebar>
     );
   }
