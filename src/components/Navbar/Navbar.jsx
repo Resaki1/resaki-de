@@ -44,16 +44,16 @@ export default class Navbar extends React.Component {
           <a href="#astro">Astro</a>
         </li>
         <li>
-          <a href="#landscape">Landschaft</a>
+          <a href="#landscape">Landscape</a>
         </li>
         <li>
-          <a href="#timelapse">Zeitraffer</a>
+          <a href="#timelapse">Timelapse</a>
         </li>
         <li>
           <a href="#shop">Shop</a>
         </li>
         <li>
-          <a href="#gear">Ausrüstung</a>
+          <a href="#gear">Gear</a>
         </li>
         <li>
           <a href="#about">About</a>

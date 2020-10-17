@@ -36,7 +36,7 @@ function App() {
         <div className="contentWrapper">
           <Home />
           <ImageContent name="astro" title="Astro" />
-          <ImageContent name="landscape" title="Landschaft" />
+          <ImageContent name="landscape" title="Landscape" />
           <Timelapse />
           <Shop />
           <Gear />

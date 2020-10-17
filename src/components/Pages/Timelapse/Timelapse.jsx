@@ -4,7 +4,7 @@ class Timelapse extends React.Component {
   render() {
     return (
       <section id="timelapse">
-        <h1>Zeitraffer</h1>
+        <h1>Timelapse</h1>
       </section>
     );
   }
