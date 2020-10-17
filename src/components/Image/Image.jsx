@@ -17,6 +17,7 @@ class Image extends React.Component {
         onMouseLeave={() => this.setState({ showDetails: false })}
       >
         <ImageDetails
+          imageName={this.props.name}
           className={this.state.showDetails ? "visible" : "hidden"}
         />
         <picture>

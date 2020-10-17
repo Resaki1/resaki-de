@@ -12,8 +12,19 @@ function ImageContent(props) {
     const storageRef = firebase.storage().ref(`Images/${props.name}`);
     storageRef.listAll().then(function(result) {
       result.items.forEach(function(imageRef) {
-        imageRef.getDownloadURL().then(function(url) {
-          setImageUrls(imageUrls => [...imageUrls, url]);
+        const imageName = imageRef.location.path
+          .split("/")
+          .pop()
+          .split(".")
+          .shift();
+        imageRef.getDownloadURL().then(function(imageUrl) {
+          setImageUrls(imageUrls => [
+            ...imageUrls,
+            {
+              name: imageName,
+              url: imageUrl
+            }
+          ]);
         });
       });
     });
@@ -22,12 +33,13 @@ function ImageContent(props) {
   return (
     <section id={props.name} className="imageContent">
       <Header title={props.title} />
-      {imageUrls.map((url, index) => {
+      {imageUrls.map((image, index) => {
         return (
           <Image
-            src={url}
+            src={image.url}
+            name={image.name}
             key={`${props.name} ${index}`}
-            alt={`${props.name} no. ${index}`}
+            alt={`${image.name}`}
           />
         );
       })}
